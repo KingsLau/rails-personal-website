@@ -1,1 +1,49 @@
-// Specific CSS for your home-page
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+i {
+  position: relative;
+}
+
+.content-container {
+  margin: 0 auto;
+
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  .card {
+    // box-shadow: 10px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    .project-image {
+      width: 65%;
+      img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  .project-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .project-description {
+    padding: 30px;
+    display: flex;
+    width: 35%;
+    // align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
