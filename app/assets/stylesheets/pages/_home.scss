@@ -8,8 +8,44 @@ h3 {
   justify-content: space-around;
 }
 
-i {
-  position: relative;
+
+.top-container {
+  display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
+  // position: absolute;
+  .card {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    .middle {
+      // justify-content: space-evenly;
+      // align-items: center;
+    }
+  }
+}
+
+.icons {
+  // position: relative;
+  // left: 1400px;
+  font-size: 60px;
+  a:hover {
+    text-decoration: none;
+
+  }
+}
+
+.intro {
+  margin: 40px 40px;
+  h1 {
+    margin: 2px 0px;
+  }
+}
+
+.avatar {
+  width: 160px;
+  height: auto;
 }
 
 .content-container {
@@ -24,7 +60,7 @@ i {
     justify-content: space-around;
     height: 100vh;
     .project-image {
-      width: 65%;
+      width: 60%;
       img {
         max-width: 100%;
         width: auto;
@@ -38,12 +74,18 @@ i {
     width: 100%;
   }
   .project-description {
+    margin: 16px;
     padding: 30px;
     display: flex;
-    width: 35%;
+    width: 30%;
     // align-items: center;
     flex-direction: column;
     justify-content: space-around;
   }
+}
+
+.odd {
+  background: black;
+  color: white;
 }
 
