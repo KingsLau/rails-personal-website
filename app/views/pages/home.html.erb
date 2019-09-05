@@ -3,8 +3,8 @@
   <div class="card odd">
     <div class="intro">
       <%= image_tag "Profile.JPG", alt: "profile image", class: "avatar" %>
-      <h1 class="">Hello,</h1>
-      <h1 class="">I'm Kingsley</h1>
+      <h1>Hi,</h1>
+      <h1>I'm Kingsley</h1>
     </div>
     <div class="middle">
       <h1>Welcome</h1>
@@ -16,14 +16,13 @@
       <%= link_to "https://www.linkedin.com/in/kingsley-lau/", target: "_blank" do %>
         <i class="fab fa-linkedin"></i>
       <% end %>
-      <%= link_to "https://github.com/KingsLau", target: "_blank" do %>
+      <%= mail_to "lau.kingsley@gmail.com" do %>
         <i class="far fa-envelope"></i>
       <% end %>
     </div>
   </div>
 
 </div>
-
 
 <!-- <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<%#= image_path 'banner.jpeg', height: 300, width: 1200, crop: :fill %>);">
 </div> -->
