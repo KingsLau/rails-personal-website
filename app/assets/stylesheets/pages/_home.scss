@@ -15,36 +15,54 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     height: 100vh;
     width: 100%;
 
+    .intro {
+      // margin-left: 5%;
+      h1 {
+        margin: 2px;
+      }
+    }
+
     .middle {
-      text-align: center;
+      // text-align: center;
 
       h1 {
-        margin: 16% 0%;
+        margin: 8% 0%;
+      }
+    }
+    .icons {
+      font-size: 50px;
+      // margin-right: 5%;
+      a {
+        color: white;
+      }
+      a:hover {
+        text-decoration: none;
       }
     }
   }
 }
 
-.icons {
-  font-size: 60px;
-  margin-right: 5%;
-  a {
-    color: white;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-}
+// .icons {
+//   font-size: 60px;
+//   margin-right: 5%;
+//   a {
+//     color: white;
+//   }
+//   a:hover {
+//     text-decoration: none;
+//   }
+// }
 
-.intro {
-  margin-left: 5%;
-  h1 {
-    margin: 2px;
-  }
-}
+// .intro {
+//   margin-left: 5%;
+//   h1 {
+//     margin: 2px;
+//   }
+// }
 
 .avatar {
   width: 240px;
@@ -57,7 +75,7 @@ h3 {
 
   .card {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: space-evenly;
     height: 100vh;
 
@@ -67,12 +85,13 @@ h3 {
         max-width: 100%;
         width: auto;
         height: auto;
+        // min-width: 440px;
       }
     }
   }
   .project-content {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     width: 100%;
     padding: 16px;
   }
@@ -82,6 +101,8 @@ h3 {
     width: 35%;
     flex-direction: column;
     justify-content: space-around;
+    overflow-wrap: break-word;
+    // min-width: 440px;
   }
 }
 

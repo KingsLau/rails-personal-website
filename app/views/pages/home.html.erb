@@ -1,18 +1,18 @@
 <div class="top-container">
 
-  <div class="card black">
-    <div class="intro">
+  <div class="card black row">
+    <div class="intro col-12 col-xl-2">
       <%= image_tag "Profile.JPG", alt: "profile image", class: "avatar" %>
       <h1>Hi,</h1>
       <h1>I'm Kingsley</h1>
     </div>
 
-    <div class="middle">
+    <div class="middle col-12 col-xl-6">
       <h1>Developer based in Hong Kong</h1>
       <h1>I like building things</h1>
     </div>
 
-    <div class="icons">
+    <div class="icons col-12 col-xl-2">
       <%= link_to "https://github.com/KingsLau", target: "_blank" do %>
         <i class="fab fa-github"></i>
       <% end %>
@@ -30,29 +30,28 @@
 <div class="content-container">
 
   <div class="card">
-    <div class="project-content">
-      <div class="project-description">
-
+    <div class="project-content row">
+      <div class="project-description col-12 col-xl-4">
         <h3>CompanyMD (built in 9 days)</h3>
         <p>CompanyMD is a platform that aggregates financial data and relevant news from a variety of trustworthy sources on the internet that lets users deep dive into specific companies as well as compare company financial data side-by-side.</p>
         <p>The main challenges of this project were to set realistic goals to complete within the short timeframe, prioritize these goals based on perceived value versus completion, aggregate data from reliable sources, and to display all of this information in clean and simple to understand format to cater to novices and professionals alike.</p>
         <p>My team was able to create a polished working project in the short timeframe this by utilizing the Scrum agile process framework so that each member worked independently on different tasks with priorities on tasks that blocked other workflows. Also, by spending a lot of time on searching for reliable APIs and or scrapping where we needed to, we were able to create a reliable project that users can trust.</p>
       </div>
-      <div class="project-image">
+      <div class="project-image col-12 col-xl-8">
         <%= link_to (image_tag 'CompanyMD.png', alt: "company md image"), "https://www.companymd.world/", target: "_blank" %>
       </div>
     </div>
   </div>
 
   <div class="card black">
-    <div class="project-content">
-      <div class="project-image">
+    <div class="project-content row">
+      <div class="project-image col-12 col-xl-8">
         <%= link_to (image_tag 'FindMySensei.png', alt: "find my sensei image"), "http://stmatch.herokuapp.com", target: "_blank" %>
       </div>
-      <div class="project-description">
+      <div class="project-description col-12 col-xl-4">
         <h3>FindMySensei (built in 5 days)</h3>
         <p>FindMySensei is a platform that links teachers with prospective students. A teacher can create a course on any subject and specify a location that they are willing to teach at. A student can search and sign up for a course. Once both parties confirm, the meet is set.</p>
-        <p>As this was our first team project, the main challenge was to accustomize ourselves to working as a team as we had only worked on independent projects prior. Another major challenge was to always ensure that code pushed into production always worked. </p>
+        <p>As this was our first team project, the main challenge was to accustomize ourselves to working as a team as we had only worked on independent projects prior. Another major challenge was to always ensure that code pushed into production always worked.</p>
         <p>To overcome these obstacles, we utilized and set up GitHub to manage and debug our code, Trello with a Scrum agile attitude, and attentiveness to Heroku logs when something went wrong.</p>
       </div>
     </div>
