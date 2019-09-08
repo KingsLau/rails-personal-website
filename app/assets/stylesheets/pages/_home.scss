@@ -12,10 +12,20 @@ h3 {
   margin-left: 0;
 }
 
+.black {
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+.avatar {
+  width: 240px;
+  min-width: 60px;
+  height: auto;
+}
+
 .top-container {
   display: flex;
   margin: 0;
-
   .card {
     flex-direction: row;
     justify-content: space-between;
@@ -25,13 +35,11 @@ h3 {
     width: 100%;
     padding: 30px 15px;
     margin: 0;
-
     .intro {
       h1 {
         margin: 2px;
       }
     }
-
     .middle {
       h1 {
         margin: 8% 0%;
@@ -39,7 +47,6 @@ h3 {
     }
     .icons {
       font-size: 50px;
-      // margin-right: 5%;
       a {
         color: white;
       }
@@ -50,15 +57,8 @@ h3 {
   }
 }
 
-.avatar {
-  width: 240px;
-  min-width: 60px;
-  height: auto;
-}
-
-.content-container {
+.project-container {
   margin: 0 auto;
-
   .card {
     display: flex;
     // flex-direction: column;
@@ -66,51 +66,46 @@ h3 {
     // height: 100vh;
     min-height: 100vh;
     padding: 30px 0;
-
-    .project-image {
-      width: 65%;
-      img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
+    .project-content {
+      display: flex;
+      width: 100%;
+      padding: 16px;
+      .project-description {
+      padding: 30px;
+      display: flex;
+      width: 35%;
+      flex-direction: column;
+      justify-content: center;
+      overflow-wrap: break-word;
+    }
+      .project-image {
+        width: 65%;
+        img {
+          max-width: 100%;
+          width: auto;
+          height: auto;
+        }
+      }
+      .project-video {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+        height: 0;
+        filter: brightness(0.8);
+        .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+          // padding: 11.7rem 1.2rem;
+        }
       }
     }
   }
-
-  .project-content {
-    display: flex;
-    width: 100%;
-    padding: 16px;
-  }
-  .project-description {
-    padding: 30px;
-    display: flex;
-    width: 35%;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow-wrap: break-word;
-  }
 }
 
-.black {
-  background-color: rgb(25, 25, 25);
-  color: white;
-}
 
-.project-video {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-  height: 0;
-  filter: brightness(0.8);
-}
 
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  // padding: 11.7rem 1.2rem;
-}
+
