@@ -71,13 +71,24 @@ h3 {
       width: 100%;
       padding: 16px;
       .project-description {
-      padding: 30px;
-      display: flex;
-      width: 35%;
-      flex-direction: column;
-      justify-content: center;
-      overflow-wrap: break-word;
-    }
+        padding: 30px;
+        display: flex;
+        width: 35%;
+        flex-direction: column;
+        justify-content: center;
+        overflow-wrap: break-word;
+        .project-header {
+          a {
+            text-decoration: none;
+            // color: black;
+          }
+          a:hover {
+            color: blue;
+          }
+        }
+        .project-text {
+        }
+      }
       .project-image {
         width: 65%;
         img {
@@ -105,7 +116,3 @@ h3 {
     }
   }
 }
-
-
-
-

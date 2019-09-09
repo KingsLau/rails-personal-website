@@ -33,7 +33,9 @@
     <div class="project-content row">
       <div class="project-description col-12 col-xl-4">
         <div class="project-header">
-          <h3>CompanyMD</h3>
+          <%= link_to "https://www.companymd.world" do %>
+            <h3>CompanyMD</h3>
+          <% end %>
           <h3>(built in 9 days)</h3>
         </div>
         <div class="project-text">
@@ -45,7 +47,7 @@
       <div class="project-video col-12 col-xl-8">
         <%#= link_to (image_tag 'CompanyMD.png', alt: "company md image"), "https://www.companymd.world/", target: "_blank" %>
         <!-- <iframe class="video" allowfullscreen="1" allowtransparency="true" src="https://www.youtube.com/embed/Wnj1kBUu7-0?mute=1&amp;modestbranding=1&amp;loop=1&amp;autoplay=1&amp;controls=0&amp;disablekb=1&amp;playlist=Wnj1kBUu7-0&amp;enablejsapi=1&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <%= video_tag "CompanyMD.mp4", autoplay: true, loop: true, mute: true, playsinline: true, class: "video" %>
+        <%= video_tag "CompanyMD.mp4", autoplay: true, loop: true, mute: true, playsinline: true, alt: "no video available", class: "video" %>
         <!-- <video class="video" width="320" height="240" controls autoplay>
           <source src="../../assets/videos/CompanyMD.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -61,11 +63,17 @@
         <%= link_to (image_tag 'FindMySensei.png', alt: "find my sensei image"), "http://stmatch.herokuapp.com", target: "_blank" %>
       </div>
       <div class="project-description col-12 col-xl-4">
-        <h3>FindMySensei</h3>
-        <h3>(built in 5 days)</h3>
-        <p>FindMySensei is a platform that links teachers with prospective students. A teacher can create a course on any subject and specify a location that they are willing to teach at. A student can search and sign up for a course. Once both parties confirm, the meet is set.</p>
-        <p>As this was our first team project, the main challenge was to accustomize ourselves to working as a team as we had only worked on independent projects prior. Another major challenge was to always ensure that code pushed into production always worked.</p>
-        <p>To overcome these obstacles, we utilized and set up GitHub to manage and debug our code, Trello with a Scrum agile attitude, and attentiveness to Heroku logs when something went wrong.</p>
+        <div class="project-header">
+          <%= link_to "http://stmatch.herokuapp.com" do %>
+            <h3>FindMySensei</h3>
+          <% end %>
+          <h3>(built in 5 days)</h3>
+        </div>
+        <div class="project-text">
+          <p>FindMySensei is a platform that links teachers with prospective students. A teacher can create a course on any subject and specify a location that they are willing to teach at. A student can search and sign up for a course. Once both parties confirm, the meet is set.</p>
+          <p>As this was our first team project, the main challenge was to accustomize ourselves to working as a team as we had only worked on independent projects prior. Another major challenge was to always ensure that code pushed into production always worked.</p>
+          <p>To overcome these obstacles, we utilized and set up GitHub to manage and debug our code, Trello with a Scrum agile attitude, and attentiveness to Heroku logs when something went wrong.</p>
+        </div>
       </div>
     </div>
   </div>
